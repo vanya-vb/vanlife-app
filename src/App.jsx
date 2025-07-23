@@ -4,6 +4,7 @@ import About from "./pages/About"
 
 import "../server"
 import Vans from "./pages/Vans"
+import VanDetails from "./pages/VanDetails"
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/vans" element={<Vans />} />
+        <Route path="/vans/:id" element={<VanDetails />} />
       </Routes>
     </>
   )
